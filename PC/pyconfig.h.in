@@ -1,6 +1,18 @@
 #ifndef Py_CONFIG_H
 #define Py_CONFIG_H
 
+#ifndef Py_ENABLE_SHARED
+#define Py_ENABLE_SHARED=0
+#endif
+#ifndef Py_ENABLE_STATIC
+#define Py_ENABLE_STATIC=1
+#endif
+#ifndef Py_NO_ENABLE_SHARED
+#define Py_NO_ENABLE_SHARED
+#endif
+#if defiend USE_DL_EXPORT
+#undef USE_DL_EXPORT
+#endif
 /* pyconfig.h.  NOT Generated automatically by configure.
 
 This is a manually maintained version used for the Watcom,
@@ -99,7 +111,7 @@ WIN32 is still required for the locale module.
  * when compiling extension modules. Note that we test with #ifdef, so
  * defining as 0 will still disable the GIL. */
 #ifndef Py_GIL_DISABLED
-/* #define Py_GIL_DISABLED 1 */
+#define Py_GIL_DISABLED 1 
 #endif
 
 /* Compiler specific defines */
