@@ -2,15 +2,15 @@
 #define Py_CONFIG_H
 
 #ifndef Py_ENABLE_SHARED
-#define Py_ENABLE_SHARED=0
+#define Py_ENABLE_SHARED 0
 #endif
 #ifndef Py_ENABLE_STATIC
-#define Py_ENABLE_STATIC=1
+#define Py_ENABLE_STATIC 1
 #endif
 #ifndef Py_NO_ENABLE_SHARED
 #define Py_NO_ENABLE_SHARED
 #endif
-#if defiend USE_DL_EXPORT
+#if defined USE_DL_EXPORT
 #undef USE_DL_EXPORT
 #endif
 /* pyconfig.h.  NOT Generated automatically by configure.
