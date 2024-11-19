@@ -1,6 +1,14 @@
 #ifndef Py_CONFIG_H
 #define Py_CONFIG_H
 
+#if !defined Py_ENABLE_STATIC
+#define Py_ENABLE_STATIC 1
+#endif
+
+#if !defined Py_NO_ENABLE_SHARED
+#define Py_NO_ENABLE_SHARED 1
+#endif
+
 /* pyconfig.h.  NOT Generated automatically by configure.
 
 This is a manually maintained version used for the Watcom,
