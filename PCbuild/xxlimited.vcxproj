@@ -99,6 +99,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\Modules\xxlimited.c" />
+    <ClCompile Include="..\Objects\object.c" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="python3dll.vcxproj">
