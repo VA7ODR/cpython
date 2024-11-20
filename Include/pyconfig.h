@@ -107,7 +107,7 @@ WIN32 is still required for the locale module.
  * when compiling extension modules. Note that we test with #ifdef, so
  * defining as 0 will still disable the GIL. */
 #ifndef Py_GIL_DISABLED
-/* #define Py_GIL_DISABLED 1 */
+#define Py_GIL_DISABLED 1
 #endif
 
 /* Compiler specific defines */
